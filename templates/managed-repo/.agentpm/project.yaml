@@ -1,0 +1,16 @@
+name: Managed Project
+commands:
+  test: pytest -q
+  lint: ruff check .
+  format: ruff format .
+policies:
+  auto_execute: true
+  max_parallel_runs: 2
+claude:
+  allowed_tools:
+    - Read
+    - Edit
+    - Write
+    - Glob
+    - Grep
+    - Bash
